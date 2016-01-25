@@ -17,29 +17,50 @@ StringController::StringController()
 
 void StringController :: start()
 {
-	cout << str << endl;
+	cout << "The current string is: " << str << endl;
 
+	stringLength();
+	stringEmpty();
+	stringAt();
+	stringSubstr();
+	stringCompare();
+}
+
+void StringController :: stringLength()
+{
 	//Length
-	cout << str.length() << endl;
+	cout << "The length of the string is: " << str.length() << endl;
+}
 
-	//At
-	cout << str.at(4) << endl;
-
+void StringController :: stringEmpty()
+{
 	//Empty
-	if(str.empty())
+	if(!str.empty())
 	{
-		cout << "The string is empty." << endl;
+		cout << "The string contains characters" << endl;
 	}
 	else
 	{
-		cout << "The string is NOT empty." << endl;
+		cout << "The string does not contain any characters." << endl;
 	}
+}
 
+void StringController :: stringAt()
+{
+	//At
+	cout << "The character in the fourth position is: " << str.at(4) << endl;
+}
+
+void StringController :: stringSubstr()
+{
 	//Substring
-	cout << str.substr(2, 7) << endl;
+	cout << "The characters between the second and fifth spots are: " << str.substr(2, 5) << endl;
 
-	cout << str.substr(3) << endl;
+	cout << "The characters after the third slot are: " << str.substr(3) << endl;
+}
 
+void StringController :: stringCompare()
+{
 	//Compare
 	cout << "Please enter a string: " << endl;
 	string string1;
@@ -58,6 +79,3 @@ void StringController :: start()
 		cout << "The strings don't match!" << endl;
 	}
 }
-
-
-

@@ -17,6 +17,11 @@ private:
 public:
 	StringController();
 	void start();
+	void stringLength();
+	void stringAt();
+	void stringEmpty();
+	void stringSubstr();
+	void stringCompare();
 };
 
 #endif /* CONTROLLER_STRINGCONTROLLER_H_ */
